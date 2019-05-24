@@ -1,30 +1,28 @@
-package datanapps.androidofflinecaching;
+package datanapps.androidofflinecaching.ui;
 
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import datanapps.androidofflinecaching.R;
 import datanapps.androidofflinecaching.network.RetrofitEventListener;
 import datanapps.androidofflinecaching.network.users.ApiUserServiceRepoImpl;
 import datanapps.androidofflinecaching.network.users.model.BaseUser;
 import retrofit2.Call;
 
-public class WeatherActivity extends AppCompatActivity {
+public class UserListActivity extends AppCompatActivity {
 
 
     @BindView(R.id.weather_recycler_view)
     RecyclerView recyclerView;
 
 
-    private WeatherAdapter weatherAdapter;
+    private UserListAdapter weatherAdapter;
 
 
     @Override
@@ -40,7 +38,7 @@ public class WeatherActivity extends AppCompatActivity {
     }
 
     private void setRecycleView() {
-        weatherAdapter = new WeatherAdapter(this);
+        weatherAdapter = new UserListAdapter(this);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());

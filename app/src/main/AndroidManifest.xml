@@ -16,7 +16,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
 
-        <activity android:name=".WeatherActivity">
+        <activity android:name=".ui.UserListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

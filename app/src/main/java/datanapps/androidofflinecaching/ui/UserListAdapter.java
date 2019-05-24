@@ -1,4 +1,4 @@
-package datanapps.androidofflinecaching;
+package datanapps.androidofflinecaching.ui;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -15,9 +15,10 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import datanapps.androidofflinecaching.R;
 import datanapps.androidofflinecaching.network.users.model.User;
 
-public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.MyViewHolder> {
+public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyViewHolder> {
 
 
     private List<User> albumList = new ArrayList<>();
@@ -25,7 +26,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.MyViewHo
     private LayoutInflater inflater;
 
 
-    public WeatherAdapter(Context mContext) {
+    public UserListAdapter(Context mContext) {
 
         inflater = LayoutInflater.from(mContext);
     }
