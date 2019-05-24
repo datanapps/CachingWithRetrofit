@@ -1,4 +1,4 @@
-package datanapps.androidofflinecaching.ui;
+package datanapps.caching.retrofit.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,10 +9,10 @@ import android.util.Log;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import datanapps.androidofflinecaching.R;
-import datanapps.androidofflinecaching.network.RetrofitEventListener;
-import datanapps.androidofflinecaching.network.users.ApiUserServiceRepoImpl;
-import datanapps.androidofflinecaching.network.users.model.BaseUser;
+import datanapps.caching.retrofit.R;
+import datanapps.caching.retrofit.network.RetrofitEventListener;
+import datanapps.caching.retrofit.network.users.ApiUserServiceRepoImpl;
+import datanapps.caching.retrofit.network.users.model.BaseUser;
 import retrofit2.Call;
 
 public class UserListActivity extends AppCompatActivity {

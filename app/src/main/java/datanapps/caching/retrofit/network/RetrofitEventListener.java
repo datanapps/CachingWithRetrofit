@@ -1,4 +1,4 @@
-package datanapps.androidofflinecaching.network;
+package datanapps.caching.retrofit.network;
 
 import retrofit2.Call;
 

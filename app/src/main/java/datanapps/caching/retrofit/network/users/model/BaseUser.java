@@ -1,4 +1,4 @@
-package datanapps.androidofflinecaching.network.users.model;
+package datanapps.caching.retrofit.network.users.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

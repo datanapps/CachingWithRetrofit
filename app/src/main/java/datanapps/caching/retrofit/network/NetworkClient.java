@@ -1,11 +1,11 @@
-package datanapps.androidofflinecaching.network;
+package datanapps.caching.retrofit.network;
 
 import android.content.Context;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import datanapps.androidofflinecaching.utils.Utils;
+import datanapps.caching.retrofit.utils.Utils;
 import okhttp3.Cache;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;

@@ -1,12 +1,12 @@
-package datanapps.androidofflinecaching.network.users;
+package datanapps.caching.retrofit.network.users;
 
 import android.content.Context;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import datanapps.androidofflinecaching.network.NetworkClient;
-import datanapps.androidofflinecaching.network.RetrofitEventListener;
+import datanapps.caching.retrofit.network.NetworkClient;
+import datanapps.caching.retrofit.network.RetrofitEventListener;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

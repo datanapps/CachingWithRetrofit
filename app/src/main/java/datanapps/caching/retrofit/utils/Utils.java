@@ -1,4 +1,4 @@
-package datanapps.androidofflinecaching.utils;
+package datanapps.caching.retrofit.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

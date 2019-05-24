@@ -1,8 +1,8 @@
-package datanapps.androidofflinecaching.network.users;
+package datanapps.caching.retrofit.network.users;
 
 import java.util.Map;
 
-import datanapps.androidofflinecaching.network.users.model.BaseUser;
+import datanapps.caching.retrofit.network.users.model.BaseUser;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;

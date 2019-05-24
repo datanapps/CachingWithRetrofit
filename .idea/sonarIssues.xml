@@ -3,16 +3,6 @@
   <component name="issues">
     <option name="index">
       <map>
-        <entry key="/a.dummy">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="/fragment.java">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -23,142 +13,22 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/MainActivity.java">
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/caching/retrofit/network/NetworkClient.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/WeatherActivity.java">
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/caching/retrofit/network/users/APIUserService.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/WeatherAdapter.java">
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/caching/retrofit/network/users/ApiUserServiceRepoImpl.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/NetworkClient.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/APIUserService.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/APIWeather.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/ApiUserServiceRepoImpl.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/ApiWeatherRestClient.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/BaseUser.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/City.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/Coord.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/List.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/Main.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/Sys.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/User.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/Weather.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/users/model/Wind.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/network/weather/APIWeather.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/ui/UserListActivity.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/ui/UserListAdapter.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/ui/WeatherActivity.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/ui/WeatherAdapter.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidofflinecaching/utils/utils.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_weather.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_list_user.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../OpenWeather/app/build.gradle">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../OpenWeather/app/src/main/java/datanapps/openweather/service/network/NetworkClient.java">
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <value>
             <set />
           </value>

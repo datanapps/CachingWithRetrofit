@@ -1,4 +1,4 @@
-package datanapps.androidofflinecaching.ui;
+package datanapps.caching.retrofit.ui;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -15,8 +15,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import datanapps.androidofflinecaching.R;
-import datanapps.androidofflinecaching.network.users.model.User;
+import datanapps.caching.retrofit.R;
+import datanapps.caching.retrofit.network.users.model.User;
 
 public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyViewHolder> {
 
