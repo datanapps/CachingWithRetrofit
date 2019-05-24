@@ -23,34 +23,6 @@ public class NetworkClient {
     private static final long cacheSize = 5 * 1024 *1024 ; // 5 x 1024 x 1024
 
     public static Retrofit retrofit;
-   /* *//*
-    This public static method will return Retrofit client
-    anywhere in the appplication
-    *//*
-    public static Retrofit getRetrofitClient() {
-        if (retrofit == null) {
-            OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder();
-            okHttpClientBuilder.connectTimeout(TIMEOUT, TimeUnit.SECONDS);
-
-            *//*if (BuildConfig.DEBUG) {
-                HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
-                httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
-
-                okHttpClientBuilder
-                        .addInterceptor(httpLoggingInterceptor);
-            }*//*
-            //okHttpClientBuilder.addInterceptor(new RequestResponseInterseptor(context));
-
-            retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .client(okHttpClientBuilder.build())
-                    .build();
-        }
-        return retrofit;
-    }*/
-
-
     public static Retrofit getRetrofitClient(final Context context) {
         if (retrofit == null) {
             Cache myCache = new Cache(context.getCacheDir(), cacheSize);
