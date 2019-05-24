@@ -1,5 +1,7 @@
 package datanapps.androidofflinecaching.network.users;
 
+import android.content.Context;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,15 +25,11 @@ public class ApiUserServiceRepoImpl {
 
     /**
      * Invoke getWeather via {@link Call} request.
-     *
-     * @param indianCityName of City.
      * @param retrofitEventListener of RetrofitEventListener.
      */
-    public void getWeather(final RetrofitEventListener retrofitEventListener) {
-
-        Retrofit retrofit = NetworkClient.getRetrofitClient();
+    public void getWeather(Context context, final RetrofitEventListener retrofitEventListener) {
+        Retrofit retrofit = NetworkClient.getRetrofitClient(context);
         mApiUser = retrofit.create(APIUserService.class);
-
         Map<String, String> data = new HashMap<>();
         data.put("page", "1");
 

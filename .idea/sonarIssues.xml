@@ -158,6 +158,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../OpenWeather/app/src/main/java/datanapps/openweather/service/network/NetworkClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

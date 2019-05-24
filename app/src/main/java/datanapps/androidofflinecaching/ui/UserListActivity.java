@@ -49,7 +49,7 @@ public class UserListActivity extends AppCompatActivity {
 
      void uploadWeatherData() {
         //showProgressDialog("Wait...");
-        ApiUserServiceRepoImpl.getInstance().getWeather(new RetrofitEventListener() {
+        ApiUserServiceRepoImpl.getInstance().getWeather(this, new RetrofitEventListener() {
             @Override
             public void onSuccess(Call call, Object response) {
                 if (response instanceof BaseUser) {
