@@ -17,14 +17,12 @@ import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class NetworkClientWithCaching {
+public class RetrofitClient {
 
 
     private static final String BASE_URL = "https://reqres.in";
 
     private static final int TIMEOUT = 10;
-    private static final long cacheSize = 5 * 1024 *1024 ; // 5 x 1024 x 1024
-
 
     /**
      * The overridden cache duration to keep data from GET requests.
@@ -66,26 +64,8 @@ public class NetworkClientWithCaching {
             OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder();
             okHttpClientBuilder.connectTimeout(TIMEOUT, TimeUnit.SECONDS);
             okHttpClientBuilder.cache(myCache);
-
             okHttpClientBuilder.addInterceptor(rewriteRequestInterceptor);
             okHttpClientBuilder.addNetworkInterceptor(REWRITE_RESPONSE_CACHE_CONTROL_INTERCEPTOR);
-
-
-            /*okHttpClientBuilder.addInterceptor(new Interceptor() {
-                @Override
-                public Response intercept(Chain chain) throws IOException {
-                    Request request = chain.request();
-
-                    if (Utils.isNetworkConnected(context)) {
-                        request.newBuilder().header("Cache-Control", "public, max-age=" + 5).build();
-                    } else {
-                        request.newBuilder().header("Cache-Control", "public, only-if-cached, max-stale=" + 60 * 60 * 24 * 7).build();
-                    }
-
-
-                    return chain.proceed(request);
-                }
-            });*/
 
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)

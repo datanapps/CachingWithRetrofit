@@ -1,12 +1,9 @@
 package datanapps.caching.retrofit.network.users;
 
-import android.content.Context;
-
 import java.util.HashMap;
 import java.util.Map;
 
-import datanapps.caching.retrofit.network.NetworkClient;
-import datanapps.caching.retrofit.network.NetworkClientWithCaching;
+import datanapps.caching.retrofit.network.RetrofitClient;
 import datanapps.caching.retrofit.network.RetrofitEventListener;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -29,7 +26,7 @@ public class ApiUserServiceRepoImpl {
      * @param retrofitEventListener of RetrofitEventListener.
      */
     public void getWeather(final RetrofitEventListener retrofitEventListener) {
-        Retrofit retrofit = NetworkClientWithCaching.getRetrofitClient();
+        Retrofit retrofit = RetrofitClient.getRetrofitClient();
         mApiUser = retrofit.create(APIUserService.class);
         Map<String, String> data = new HashMap<>();
         data.put("page", "1");
