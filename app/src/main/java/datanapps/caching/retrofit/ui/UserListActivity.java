@@ -67,7 +67,7 @@ public class UserListActivity extends AppCompatActivity {
          }
 
 
-        ApiUserServiceRepoImpl.getInstance().getWeather(this, new RetrofitEventListener() {
+        ApiUserServiceRepoImpl.getInstance().getWeather( new RetrofitEventListener() {
             @Override
             public void onSuccess(Call call, Object response) {
                 if (response instanceof BaseUser) {

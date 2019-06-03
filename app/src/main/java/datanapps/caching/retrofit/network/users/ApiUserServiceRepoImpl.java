@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import datanapps.caching.retrofit.network.NetworkClient;
+import datanapps.caching.retrofit.network.NetworkClientWithCaching;
 import datanapps.caching.retrofit.network.RetrofitEventListener;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -27,8 +28,8 @@ public class ApiUserServiceRepoImpl {
      * Invoke getWeather via {@link Call} request.
      * @param retrofitEventListener of RetrofitEventListener.
      */
-    public void getWeather(Context context, final RetrofitEventListener retrofitEventListener) {
-        Retrofit retrofit = NetworkClient.getRetrofitClient(context);
+    public void getWeather(final RetrofitEventListener retrofitEventListener) {
+        Retrofit retrofit = NetworkClientWithCaching.getRetrofitClient();
         mApiUser = retrofit.create(APIUserService.class);
         Map<String, String> data = new HashMap<>();
         data.put("page", "1");
