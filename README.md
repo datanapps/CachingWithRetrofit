@@ -146,26 +146,8 @@ https://github.com/datanapps/CachingWithRetrofit/blob/master/screens/app-debug.a
             OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder();
             okHttpClientBuilder.connectTimeout(TIMEOUT, TimeUnit.SECONDS);
             okHttpClientBuilder.cache(myCache);
-
             okHttpClientBuilder.addInterceptor(rewriteRequestInterceptor);
             okHttpClientBuilder.addNetworkInterceptor(REWRITE_RESPONSE_CACHE_CONTROL_INTERCEPTOR);
-
-
-            /*okHttpClientBuilder.addInterceptor(new Interceptor() {
-                @Override
-                public Response intercept(Chain chain) throws IOException {
-                    Request request = chain.request();
-
-                    if (Utils.isNetworkConnected(context)) {
-                        request.newBuilder().header("Cache-Control", "public, max-age=" + 5).build();
-                    } else {
-                        request.newBuilder().header("Cache-Control", "public, only-if-cached, max-stale=" + 60 * 60 * 24 * 7).build();
-                    }
-
-
-                    return chain.proceed(request);
-                }
-            });*/
 
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
@@ -176,7 +158,6 @@ https://github.com/datanapps/CachingWithRetrofit/blob/master/screens/app-debug.a
         return retrofit;
     }
 
-
     private static Cache getHttpCache() {
         final File cacheDir;
         if (BuildConfig.DEBUG) {
@@ -186,7 +167,6 @@ https://github.com/datanapps/CachingWithRetrofit/blob/master/screens/app-debug.a
         }
         return new Cache(cacheDir, HTTP_CACHE_MAX_SIZE);
     }
-
 
     private static final Interceptor rewriteRequestInterceptor = new Interceptor() {
         @Override
@@ -238,7 +218,4 @@ https://github.com/datanapps/CachingWithRetrofit/blob/master/screens/app-debug.a
         }
     };
 
-
     }
-
-
