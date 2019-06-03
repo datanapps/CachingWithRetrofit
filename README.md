@@ -20,9 +20,14 @@ https://github.com/datanapps/CachingWithRetrofit/blob/master/screens/app-debug.a
 
 
 
+### Interceptor
+**The idea of interceptor is that it should serve as the gateway for all the API requests your application fires. So that there is single point of change for requirements that span across all the calls.**
+
+
+
 ### Retrofit Network Client (add interceptor):
 
-#### if you want to hit 1-6 api and not have more data then you can use only intercepter : 
+#### if your app has a limit (1-8) on the number of requests you can make : 
 
 
 
