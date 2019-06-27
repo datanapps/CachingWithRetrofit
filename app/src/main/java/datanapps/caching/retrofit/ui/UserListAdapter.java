@@ -21,44 +21,35 @@ import datanapps.caching.retrofit.network.users.model.User;
 public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyViewHolder> {
 
 
-    private List<User> albumList = new ArrayList<>();
-
+    private List<User> userList = new ArrayList<>();
     private LayoutInflater inflater;
 
 
     public UserListAdapter(Context mContext) {
-
         inflater = LayoutInflater.from(mContext);
     }
 
-    public  void setAlbumList(List<User> albumList){
-        this.albumList = albumList;
+    public  void setUserList(List<User> userList){
+        this.userList = userList;
         notifyDataSetChanged();
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = inflater.inflate(R.layout.layout_list_user, parent, false);
-
-        return new MyViewHolder(itemView);
+        return new MyViewHolder(inflater.inflate(R.layout.layout_list_user, parent, false));
     }
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        User user = albumList.get(position);
-
-        Picasso.get().load(user.getAvatar()).into(holder.userIcon);
-
+        User user = userList.get(position);
+        Picasso.get().load(user.getImage()).into(holder.userIcon);
         holder.tvUserName.setText(user.getFirstName());
-
         holder.tvUserEmail.setText(user.getEmail());
-
-
     }
 
     @Override
     public int getItemCount() {
-        return albumList.size();
+        return userList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

@@ -10,7 +10,6 @@ public class CachingWithRetrofitApp extends Application {
         super.onCreate();
         CachingWithRetrofitApp.context = getApplicationContext();
     }
-
     public static Context getAppContext() {
         return CachingWithRetrofitApp.context;
     }

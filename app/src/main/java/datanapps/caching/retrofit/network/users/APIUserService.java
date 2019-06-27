@@ -12,9 +12,6 @@ import retrofit2.http.QueryMap;
  */
 public interface APIUserService {
 
-    @GET("api/users?")
-    Call<BaseUser> getUserList(@QueryMap Map<String, String> map);
-
-
-
+    @GET("DNARestAPIs/getUserLists")
+    Call<BaseUser> getUserList();
 }

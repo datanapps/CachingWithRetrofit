@@ -19,8 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-
-    private static final String BASE_URL = "https://reqres.in";
+    private static final String BASE_URL = "https://datanapps.com";
 
     private static final int TIMEOUT = 10;
 
@@ -51,7 +50,7 @@ public class RetrofitClient {
      * The directory name to place cache files from OkHttp. This directory will be placed in the
      * app's internal cache directory (or external if this is a debug build)
      */
-    private static final String HTTP_CACHE_DIR = "ccachingwithretrofit_cache";
+    private static final String HTTP_CACHE_DIR = "cachingwithretrofit_cache";
 
 
 
@@ -72,6 +71,7 @@ public class RetrofitClient {
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(okHttpClientBuilder.build())
                     .build();
+
         }
         return retrofit;
     }

@@ -6,59 +6,39 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class BaseUser {
-    @SerializedName("page")
+
+    @SerializedName("userlist")
     @Expose
-    private Integer page;
-    @SerializedName("per_page")
+    private List<User> userlist = null;
+    @SerializedName("totalrecords")
     @Expose
-    private Integer perPage;
-    @SerializedName("total")
+    private Integer totalrecords;
+    @SerializedName("message")
     @Expose
-    private Integer total;
-    @SerializedName("total_pages")
-    @Expose
-    private Integer totalPages;
-    @SerializedName("data")
-    @Expose
-    private List<User> data = null;
+    private String message;
 
-    public Integer getPage() {
-        return page;
+    public List<User> getUserlist() {
+        return userlist;
     }
 
-    public void setPage(Integer page) {
-        this.page = page;
+    public void setUserlist(List<User> userlist) {
+        this.userlist = userlist;
     }
 
-    public Integer getPerPage() {
-        return perPage;
+    public Integer getTotalrecords() {
+        return totalrecords;
     }
 
-    public void setPerPage(Integer perPage) {
-        this.perPage = perPage;
+    public void setTotalrecords(Integer totalrecords) {
+        this.totalrecords = totalrecords;
     }
 
-    public Integer getTotal() {
-        return total;
+    public String getMessage() {
+        return message;
     }
 
-    public void setTotal(Integer total) {
-        this.total = total;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
-    public Integer getTotalPages() {
-        return totalPages;
-    }
-
-    public void setTotalPages(Integer totalPages) {
-        this.totalPages = totalPages;
-    }
-
-    public List<User> getData() {
-        return data;
-    }
-
-    public void setData(List<User> data) {
-        this.data = data;
-    }
 }

@@ -34,7 +34,7 @@ public class UserListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weather);
+        setContentView(R.layout.activity_user);
         ButterKnife.bind(this);
 
         setRecycleView();
@@ -43,11 +43,11 @@ public class UserListActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 swipeRefreshLayout.setRefreshing(true);
-                uploadWeatherData();
+                callUserListApi();
             }
         });
 
-        uploadWeatherData();
+        callUserListApi();
     }
 
     private void setRecycleView() {
@@ -60,7 +60,7 @@ public class UserListActivity extends AppCompatActivity {
 
 
 
-     void uploadWeatherData() {
+     void callUserListApi() {
 
          if (!Utils.isNetworkConnected(this)) {
              Snackbar.make(recyclerView, "No internet", Snackbar.LENGTH_LONG).show();
@@ -71,9 +71,9 @@ public class UserListActivity extends AppCompatActivity {
             @Override
             public void onSuccess(Call call, Object response) {
                 if (response instanceof BaseUser) {
-                    Log.d("asd", "-----" + ((BaseUser) response).getData().size());
+                    Log.d("asd", "-----" + ((BaseUser) response).getUserlist().size());
                     Snackbar.make(recyclerView, "get data", Snackbar.LENGTH_LONG).show();
-                    weatherAdapter.setAlbumList(((BaseUser) response).getData());
+                    weatherAdapter.setUserList(((BaseUser) response).getUserlist());
                     swipeRefreshLayout.setRefreshing(false);
                 }
             }

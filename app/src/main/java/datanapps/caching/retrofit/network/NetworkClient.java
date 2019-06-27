@@ -19,8 +19,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkClient {
 
+    //"https://datanapps.com/DNARestAPIs/getUserLists"
 
-    private static final String BASE_URL = "https://reqres.in";
+    private static final String BASE_URL = "https://datanapps.com";
 
     private static final int TIMEOUT = 10;
     private static final long cacheSize = 5 * 1024 *1024 ; // 5 x 1024 x 1024

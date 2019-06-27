@@ -28,11 +28,9 @@ public class ApiUserServiceRepoImpl {
     public void getWeather(final RetrofitEventListener retrofitEventListener) {
         Retrofit retrofit = RetrofitClient.getRetrofitClient();
         mApiUser = retrofit.create(APIUserService.class);
-        Map<String, String> data = new HashMap<>();
-        data.put("page", "1");
 
 
-        Call apiUserCall = mApiUser.getUserList(data);
+        Call apiUserCall = mApiUser.getUserList();
        /*
         This is the line which actually sends a network request. Calling enqueue() executes a call asynchronously. It has two callback listeners which will invoked on the main thread
         */
